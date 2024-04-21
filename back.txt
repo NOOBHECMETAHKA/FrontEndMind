@@ -1,0 +1,68 @@
+<template>
+  <header>
+    <div>
+      <h1>Название магазина</h1>
+      <div>
+        <p><button><user-icon></user-icon></button> Личный кабинет</p>
+      </div>
+      <div>
+        <h3>89586355331</h3>
+      </div>
+      <div>
+        <p>Поиска по сайту <button> <SearchIcon></SearchIcon> </button></p>
+      </div>
+      <div>
+        <button>
+          <BasketIcon></BasketIcon>
+        </button>
+      </div>
+    </div>
+    <div>
+      <nav>
+        <ul class="__header_nav_list">
+          <li>
+            <router-link to="/"><h3>Выставка</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/"><h3>Дизайн</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/"><h3>Мебель на заказ</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/"><h3>Контакты</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/"><h3>Каталог</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/"><h3>Проекты</h3></router-link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script>
+import UserIcon from "@/components/svg/UserIcon.vue";
+import SearchIcon from "@/components/svg/SearchIcon.vue";
+import BasketIcon from "@/components/svg/BasketIcon.vue";
+
+
+export default {
+  components: {
+    BasketIcon,
+    SearchIcon,
+    UserIcon
+  }
+}
+</script>
+
+<style scoped>
+h1, h2, h3, h4, h5 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+</style>
